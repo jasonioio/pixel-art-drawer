@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import DimensionForm from './DimensionForm'
 import PixelCanvas from './PixelCanvas'
 import RGBAPixel from './RGBAPixel';
+import ColorSelection from './ColorSelection';
 
 function App() {
   
@@ -47,6 +48,8 @@ function App() {
       <DimensionForm onSubmit={setDimensions}/>
       <div>current: {dimensions.height} x {dimensions.width}</div>
       <PixelCanvas dimensions={dimensions} pixelData={pixelData} selectedColor={selectedColor} onClick={setPixelData} />
+      <div> select color: </div>
+      <ColorSelection onClick={setSelectedColor}/>
     </div>
   )
 }
