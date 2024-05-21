@@ -9,7 +9,11 @@ const ColorSelection = ({ onClick }) => {
     new RGBAPixel(27, 108, 35, 1),
     new RGBAPixel(255, 255, 255, 1),
     new RGBAPixel(0, 0, 0, 1),
-    new RGBAPixel(223, 161, 31, 1)
+    new RGBAPixel(223, 161, 31, 1),
+    new RGBAPixel(120, 234, 240, 1),
+    new RGBAPixel(207, 255, 102, 1),
+    new RGBAPixel(245, 221, 37,11), 
+    new RGBAPixel(174, 31, 209, 1)
   ];
 
   const height = 2;
@@ -30,7 +34,7 @@ const ColorSelection = ({ onClick }) => {
         colorSelection.push(
           <button
             key={index}
-            className="pixel"
+            className="color-select"
             style={{ backgroundColor: colors[index] ? colors[index].toString() : "transparent"}}
             onClick={() => handleSelectColor(colors[index])}
           ></button>

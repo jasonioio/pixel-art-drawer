@@ -54,3 +54,10 @@ button:hover {
   border: 1px solid #646cff;
 }
 
+.color-select {
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
